@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumberStyle">
+        <item name="android:layout_margin">@dimen/layout_margin</item>
+        <item name="android:fontFamily">@font/annie_use_your_telescope</item>
+        <item name="android:padding">@dimen/small_padding</item>
+    </style>
+</resources>
