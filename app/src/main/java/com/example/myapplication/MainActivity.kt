@@ -19,14 +19,14 @@ class MainActivity : AppCompatActivity() {
 
         diceImg = findViewById(R.id.diceImage)
         numberText = findViewById(R.id.numbTxt)
-        //nameText = findViewById(R.id.EditPlayerName)
-        //playerNameText = findViewById(R.id.playerName)
+        nameText = findViewById(R.id.EditPlayerName)
+        playerNameText = findViewById(R.id.playerName)
 
         val rollBtn:Button = findViewById(R.id.rollButton)
         rollBtn.setOnClickListener{rollDice()}
 
-        //val updateBtn:Button = findViewById(R.id.updateButton)
-        //updateBtn.setOnClickListener{updateName(it)}
+        val updateBtn:Button = findViewById(R.id.updateButton)
+        updateBtn.setOnClickListener{updateName(it)}
     }
 
     private fun updateName(view: View){
