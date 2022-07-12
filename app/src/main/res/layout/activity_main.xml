@@ -17,11 +17,27 @@
             android:id="@+id/EditPlayerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight= "4"
             android:text="Update" />
+        
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit" />
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Your Name" 
+        style="@style/NumberStyle" />
+    
     <TextView
         android:id="@+id/numbTxt"
         android:layout_width="wrap_content"
