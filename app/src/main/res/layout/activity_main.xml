@@ -18,8 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_weight= "4"
-            android:text="Update" />
+            android:layout_weight="4"
+            android:hint="Your name here" />
         
         <Button
             android:id="@+id/updateButton"

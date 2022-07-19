@@ -1,16 +1,19 @@
 package com.example.myapplication
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     lateinit var diceImg : ImageView
     lateinit var numberText : TextView
-    lateinit var nameText : TextView
+    lateinit var nameText : EditText
     lateinit var playerNameText : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +34,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateName(view: View){
         playerNameText.text = nameText.text
+
+        nameText.text.clear()
+
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 
     private fun rollDice(){
